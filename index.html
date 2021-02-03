@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/525fd5b530.js" crossorigin="anonymous"></script>
+  <title>ToDo List</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="header">
+      <h2>To Do List</h2>
+    </div>
+    <div class="container">
+      <div class="todo-input-container">
+        <form id="formAddList" class="form">
+          <div class="form-control">
+            <input id="title" type="text" name="title" placeholder="Title..." />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p></p>
+          </div>
+          <div class="form-control">
+            <input id="description" type="text" name="description" placeholder="Description..." />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p></p>
+          </div>
+          <button id="buttonSubmit">Submit</button>
+        </form>
+      </div>
+      <div class="top_sub_container">
+        <form id="containerSearch">
+          <input type="search" id="searchTextBox" placeholder="Search...">
+          <span id="BtnSearch" class="searchBtn">Search</span>
+        </form>
+        <div id="list-tasks">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="add.js"></script>
+</body>
+</html>
